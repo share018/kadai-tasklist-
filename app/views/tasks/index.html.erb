@@ -13,14 +13,14 @@
       <% @tasks.each do |task| %>
         <tr>
           <td><%= link_to task.id, task %></td>
-          <td><%= task.title %></td>
+          <td><%= task.status %></td>
           <td><%= task.content %></td>
         </tr>
       <% end %>
     </tbody>
   </table>
   <div>
-    <%= paginate @tasks %>
+    <%#= paginate @tasks %>
   </div>
 <% end %>
 
